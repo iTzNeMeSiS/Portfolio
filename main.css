@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+.main {
+    height: 1000px;
+    background-color: white;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-item {
+    margin: 25% 0;
+}
