@@ -34,26 +34,42 @@
 </head>
 <body>
     <header class="header">
+        <div class="logo">
+            <a class="logo-link" href="#"><h2 class="logo-text">Portfolio</h2></a>
+        </div>
         <nav class="nav">
-            <ul class="nav-ul">
-                <li class="nav-item"></li>
-                <li class="nav-item"></li>
+            <ul class="nav-list">
+                <li><a class="nav-item" id="nav-active" href="#"> HOME</a></li>
+                <li><a class="nav-item" href="#projects"> PROJECTS</a></li>
+                <li><a class="nav-item" href="#"> ABOUT</a></li>
+                <li><a class="nav-item" href="#"> RESUME</a></li>
+                <li><a class="nav-item" href="mailto:codingdre@gmail.com"> CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <div class="main-header">
-        <h1 class="main-header-text">My Learning Projects</h1>
+    <div class="hero">
+        <div class="hero-item">
+            <img class="hero-img" src="/images/about.jpeg" alt="">
+        </div>
+        <div class="hero-item">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, reprehenderit.</p>
+        </div>
+    </div>
+    <div class="main-header" id="projects">
+        <h1>My Learning Projects</h1><br>
     </div>
     <main class="main">
+        <a href="https://itznemesis.github.io/odin-recipes/">
         <div class="main-item">
-            <a href="https://itznemesis.github.io/odin-recipes/"><img src="/images/recipepage.png" alt=""></a>
+            <img src="/images/recipepage.png" alt="">
         </div>
+        </a>
+        <a href="https://itznemesis.github.io/Odin-Landing-Page-Demo/">
         <div class="main-item">
-            <a href="https://itznemesis.github.io/Odin-Landing-Page-Demo/"><img src="/images/landingpage.png" alt=""></a>
+            <img src="/images/landingpage.png" alt="">
         </div>
-        <div class="main-item">
-
-        </div>
+        </a>
     </main>
 <footer>
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
@@ -63,9 +79,9 @@
         <foreignobject class="wow-star__text" width="100%" height="100%">
             <body class="footer" xmlns="http://www.w3.org/1999/xhtml">
                 <div class="footer-container">
-                    <img class="footer-item" src="./images/github.png" />
-                    <img class="footer-item" src="./images/linkedin.png" />
-                    <img class="footer-item" src="./images/resume.png" />
+                    <a class="footer-item" href="https://github.com/iTzNeMeSiS"><img class="footer-item" src="./images/github.png"/></a>
+                    <a class="footer-item" href="#"><img class="footer-item" src="./images/linkedin.png" /></a>
+                    <a class="footer-item" href="#"><img class="footer-item" src="./images/resume.png" /></a>
                 </div>
             </body>     
           </foreignobject>
