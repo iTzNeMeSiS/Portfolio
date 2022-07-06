@@ -20,7 +20,7 @@
                 <li><a class="nav-item" id="nav-active" href="#"><i class="fa-solid fa-house-chimney"></i> HOME</a></li>
                 <li><a class="nav-item" href="#"><i class="fa-solid fa-address-card"></i> ABOUT</a></li>
                 <li><a class="nav-item" href="#projects"><i class="fa-solid fa-file"></i> PROJECTS</a></li>
-                <li><a class="nav-item" href="mailto:codingdre@gmail.com"><i class="fa-solid fa-envelope"></i> CONTACT</a></li>
+                <li><a target="_blank" class="nav-item" href="mailto:codingdre@gmail.com"><i class="fa-solid fa-envelope"></i> CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -41,80 +41,49 @@
             <div class="tech-header">
                 <h1 class="tech-text">🔧  Technologies & Tools</h1>
             </div>
-            <div class="tech-table">
-                <table>
-                <tr>
-                    <td id="td">
-                        <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML" width="48" height="48"> </a>
-                    <br><strong>HTML5</strong>
-                    </td>
-                    <td id="td">
-                        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="48" height="48"> </a>
-                    <br><strong>CSS3</strong>
-                    </td>
-                    <td id="td">
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="48" height="48"> </a>
-                    <br><strong>JavaScript</strong>
-                    </td>
-                    <td class="react" id="td">
-                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="48" height="48"> </a>
-                    <br><strong>React</strong>
-                    </td>
-                    <td class="bootstrap" id="td">
-                        <a href="https://getbootstrap.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" width="48" height="48" alt="Bootstrap"></a>
-                    <br><strong>Bootstrap</strong>
-                    </td>
-                    <td id="td">
-                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="48" height="48"> </a>
-                    <br><strong>Git</strong>
-                    </td>
-                    <td id="td">
-                        <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django" width="48" height="48"> </a>
-                    <br><strong>Django</strong>
-                    </td>
-                <tr>
-                    <td class="flask" id="td">
-                        <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="Flask" width="48" height="48"> </a>
-                    <br><strong>Flask</strong>
-                    </td>
-                    <td id="td">
-                        <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="48" height="48"></a>
-                    <br><strong>Python</strong>
-                    </td>
-                    <td id="td">
-                        <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite" width="48" height="48"></a>
-                    <br><strong>SQLite</strong>
-                    </td>
-                    <td id="td">
-                        <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="48" height="48"></a>
-                    <br><strong>C</strong>
-                    </td>
-                    <td class="photoshop" id="td">
-                        <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="48" height="48"></a>
-                    <br><strong>Photoshop</strong>
-                    </td>
-                    <td class="sass" id="td">
-                        <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="Sass" width="48" height="48"></a>
-                    <br><strong>Sass</strong>
-                    </td>
-                    <td class="linux" id="td">
-                        <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="48" height="48"></a>
-                    <br><strong>Linux</strong>
-                    </td>
-                </tr>
-                </tr>
-                </table>
-            </div>
+            <span class="globe"></span>
+            <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+            <script>
+                const Texts = [
+                    'JavaScript', 'CSS', 'HTML',
+                    'C', 'Photoshop', 'React',
+                    'Python', 'Flask', 'git',
+                    'Django', 'Node.js', 'vscode',
+                    'Sass', 'Sqlite', 'Bootstrap',
+                ];
+        
+                var tagCloud = TagCloud('.globe', Texts,{
+        
+                    // radius in px
+                    radius: 250,
+        
+                    // animation speed
+                    // slow, normal, fast
+                    maxSpeed: 'fast',
+                    initSpeed: 'fast',
+        
+                    // 0 = top
+                    // 90 = left
+                    // 135 = right-bottom
+                    direction: 135,
+        
+                    // interact with cursor move on mouse out
+                    keep: true
+        
+                });
+                let color = '#82bee1';
+                document.querySelector('.globe').style.color = color;
+            </script>
         </div>
         <div class="main-header">
             <h1 class="projects-header" id="projects">💻 My Learning Projects</h1>
         </div>
         <div class="projects-container">
             <div class="project">
-                <a href="https://itznemesis.github.io/Odin-Landing-Page-Demo/"><img class="project-img responsive-img" src="./images/Odin-Landing-Page-Project.png" alt=""></a>
+                <a target="_blank" href="https://itznemesis.github.io/Odin-Landing-Page-Demo/"><img class="project-img responsive-img" src="./images/Odin-Landing-Page-Project.png" alt=""></a>
             </div>
             <div class="project-img">
-                <a href="https://itznemesis.github.io/Rock-Paper-Scissors/"><img class="project-img responsive-img" src="./images/Rock-Paper-Scissors-Project.png" alt=""></a>
+                <a target="_blank" href="https://itznemesis.github.io/Rock-Paper-Scissors/"><img class="project-img responsive-img" src="./images/Rock-Paper-Scissors-Project.png" alt=""></a>
             </div>
         </div>
         <div class="projects-tech">
@@ -155,10 +124,10 @@
         </div>
         <div class="projects-container-2">
             <div class="project-2">
-                <a href="https://itznemesis.github.io/search/"><img class="project-img responsive-img" src="./images/Google-Search-CS50-Project.png" alt=""></a>
+                <a target="_blank" href="https://itznemesis.github.io/search/"><img class="project-img responsive-img" src="./images/Google-Search-CS50-Project.png" alt=""></a>
             </div>
             <div class="project-img">
-                <a href="https://itznemesis.github.io/Odin-Recipes/"><img class="project-img responsive-img" src="./images/Odin-Recipes-Project.png" alt=""></a>
+                <a target="_blank" href="https://itznemesis.github.io/Odin-Recipes/"><img class="project-img responsive-img" src="./images/Odin-Recipes-Project.png" alt=""></a>
             </div>
         </div>
         <div class="projects-tech-2">
@@ -174,7 +143,7 @@
                         <br><strong>CSS3</strong>
                         </td>
                         <td id="td">
-                            <a href="https://getbootstrap.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" width="48" height="48" alt="Bootstrap"></a>
+                            <a target="_blank" href="https://getbootstrap.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" width="48" height="48" alt="Bootstrap"></a>
                         <br><strong>Bootstrap</strong>
                         </td>
                     </table>
@@ -210,9 +179,9 @@
             <foreignobject width="100%" height="100%">
                 <body class="footer" xmlns="http://www.w3.org/1999/xhtml">
                     <div class="footer-container">
-                        <a class="footer-item" href="https://github.com/iTzNeMeSiS"><img id="github" class="footer-item" src="./images/github.png"/></a>
-                        <a class="footer-item" href="#"><img id="linkedin" class="footer-item" src="./images/linkedin.png" /></a>
-                        <a class="footer-item" href="mailto:codingdre@gmail.com"><img id="email" class="footer-item" src="./images/email.png" /></a>
+                        <a target="_blank" class="footer-item" href="https://github.com/iTzNeMeSiS"><img id="github" class="footer-item" src="./images/github.png"/></a>
+                        <a target="_blank" class="footer-item" href="#"><img id="linkedin" class="footer-item" src="./images/linkedin.png" /></a>
+                        <a target="_blank" class="footer-item" href="mailto:codingdre@gmail.com"><img id="email" class="footer-item" src="./images/email.png" /></a>
                     </div>
                 </body>     
             </foreignobject>

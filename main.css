@@ -75,6 +75,16 @@ body {
 .hero-img {
     border-radius: 60%;
 }
+.tagcloud {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+}
+.tagcloud--item:hover {
+    color: #82bee1;
+}
 .hero {
     display: flex;
     justify-content: space-around;
