@@ -284,16 +284,6 @@ table {
     #email {
         width: 100px;
     }
-    #github:hover {
-        width: 130px;
-    }
-    #linkedin:hover {
-        width: 300px;
-        height: 260px;
-    }
-    #email:hover {
-        width: 110px;
-    }
     .footer-item {
         margin: 24% 0;
     }
@@ -326,15 +316,6 @@ table {
     }
     #email {
         width: 80px;
-    }
-    #github:hover {
-        width: 100px;
-    }
-    #linkedin:hover {
-        width: 300px;
-    }
-    #email:hover {
-        width: 90px;
     }
     .footer-item {
         margin: 20% 0;
