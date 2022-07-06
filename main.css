@@ -246,6 +246,9 @@ table {
         gap: 40px;
         padding-top: 40px;
     }
+    .project-img {
+        max-width: 400px;
+    }
     #github {
         width: 90px;
     }
@@ -255,9 +258,6 @@ table {
     #email {
         width: 70px;
     }
-    .hero-img {
-        width: 300px;
-    }
     .hero {
         justify-content: center;
         height: 85vh;
@@ -265,28 +265,18 @@ table {
     }
     .nav ul {
         gap: 0px;
-}
-/* For Tablets */
-@media screen and (min-width: 540px) and (max-width: 850px) {
+    }
     .projects-tech,
     .projects-tech-2 {
         display: none;
     }
-    .projects-container {
-        gap: 40px;
-        padding-top: 80px;
-    }
-    .projects-container-2 {
-        gap: 40px;
-        padding-top: 40px;
-    }
-    .hero {
-        height: 90vh;
-        padding-top: 10px;
-    }
 }
-/* For Tablets X */
-@media screen and (min-width: 850px) and (max-width: 1500px) {
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 1400px) {
+    .projects-tech,
+    .projects-tech-2 {
+        display: none;
+    }
     .projects-container {
         gap: 40px;
         padding-top: 80px;
