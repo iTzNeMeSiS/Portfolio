@@ -58,6 +58,10 @@ i:hover {
   margin: 0;
   padding: 0;
 }
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
 body {
     background-color: #fff;
     font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -95,9 +99,6 @@ body {
     align-items: center;
     gap: 100px;
     padding-top: 150px;
-}
-.project-img {
-    max-width: 600px;
 }
 #td {
     text-align: center; 
@@ -211,9 +212,6 @@ table {
     .linux {
         display: none;
     }
-    .project-img {
-        width: 450px;
-    }
     .projects-container {
         gap: 40px;
         padding-top: 80px;
@@ -241,13 +239,28 @@ table {
     }
 }
 /* For Tablets */
-@media screen and (min-width: 540px) and (max-width: 780px) {
-    .react,
+@media screen and (min-width: 540px) and (max-width: 850px) {
     .projects-tech,
-    .projects-tech-2,
-    .photoshop,
-    .bootstrap,
-    .linux {
+    .projects-tech-2 {
+        display: none;
+    }
+    .projects-container {
+        gap: 40px;
+        padding-top: 80px;
+    }
+    .projects-container-2 {
+        gap: 40px;
+        padding-top: 40px;
+    }
+    .hero {
+        height: 90vh;
+        padding-top: 10px;
+    }
+}
+/* For Tablets X */
+@media screen and (min-width: 850px) and (max-width: 1500px) {
+    .projects-tech,
+    .projects-tech-2 {
         display: none;
     }
     .projects-container {
