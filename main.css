@@ -19,24 +19,26 @@
     list-style-type: none;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .nav-item {
-    padding-left: 10px;
+    padding-left: 5px;
     text-decoration: none;
     color: black;
 }
 .nav-item:hover {
-    color: grey;
+    color: #82bee1;
 }
 #nav-active {
     font-weight: 500;
+    color: #82bee1;
 }
 #nav-active:hover {
-    color: black;
+    color: #82bee1;
 }
 .logo-link {
     text-decoration: none;
-    color: black;
+    color: #82bee1;
 }
 .projects-header {
     text-align: center;
@@ -61,12 +63,15 @@ body {
 .main {
     padding-top: 150px;
 }
+.about-me-header {
+    color: #82bee1;
+}
 .hero-img {
     border-radius: 60%;
 }
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
     flex-wrap: wrap;
