@@ -270,6 +270,25 @@ table {
     .projects-tech-2 {
         display: none;
     }
+    .logo-link {
+        font-size: 12px;
+    }
+    .nav-item {
+        font-size: 12px;
+    }
+    #github {
+        width: 120px;
+    }
+    #linkedin {
+        width: 290px;
+        height: 250px;
+    }
+    #email {
+        width: 100px;
+    }
+    .footer-item {
+        margin: 20% 0;
+    }
 }
 /* For Tablets */
 @media screen and (min-width: 540px) and (max-width: 1400px) {
@@ -289,6 +308,25 @@ table {
         height: 90vh;
         padding-top: 10px;
     }
+    .logo-link {
+        font-size: 13px;
+    }
+    .nav-item {
+        font-size: 12px;
+    }
+    #github {
+        width: 100px;
+    }
+    #linkedin {
+        width: 300px;
+    }
+    #email {
+        width: 80px;
+    }
+    .footer-item {
+        margin: 20% 0;
+    }
+    
 }
 
 /* END RESPONSIVE*/
