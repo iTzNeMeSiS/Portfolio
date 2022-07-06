@@ -4,33 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link href="main.css" rel="stylesheet">
-    <style>
-
-.path-0{
-    animation:pathAnim-0 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    }
-    @keyframes pathAnim-0{
-        0%{
-            d: path("M 0,500 C 0,500 0,250 0,250 C 115.37799043062202,267.45454545454544 230.75598086124404,284.9090909090909 340,257 C 449.24401913875596,229.0909090909091 552.3540669856459,155.81818181818187 622,163 C 691.6459330143541,170.18181818181813 727.8277511961722,257.8181818181818 824,277 C 920.1722488038278,296.1818181818182 1076.334928229665,246.9090909090909 1189,231 C 1301.665071770335,215.0909090909091 1370.8325358851675,232.54545454545456 1440,250 C 1440,250 1440,500 1440,500 Z");
-        }
-        25%{
-            d: path("M 0,500 C 0,500 0,250 0,250 C 104.51674641148324,292.11483253588517 209.03349282296648,334.22966507177034 310,337 C 410.9665071770335,339.77033492822966 508.38277511961735,303.19617224880386 605,276 C 701.6172248803827,248.80382775119614 797.4354066985645,230.98564593301435 877,214 C 956.5645933014355,197.01435406698565 1019.8755980861245,180.86124401913878 1111,187 C 1202.1244019138755,193.13875598086122 1321.0622009569379,221.5693779904306 1440,250 C 1440,250 1440,500 1440,500 Z");
-        }
-        50%{
-            d: path("M 0,500 C 0,500 0,250 0,250 C 71.7129186602871,189.26315789473685 143.4258373205742,128.5263157894737 236,161 C 328.5741626794258,193.4736842105263 442.0095693779904,319.1578947368421 554,327 C 665.9904306220096,334.8421052631579 776.5358851674641,224.8421052631579 870,214 C 963.4641148325359,203.1578947368421 1039.846889952153,291.4736842105263 1132,314 C 1224.153110047847,336.5263157894737 1332.0765550239234,293.2631578947369 1440,250 C 1440,250 1440,500 1440,500 Z");
-        }
-        75%{
-            d: path("M 0,500 C 0,500 0,250 0,250 C 106.99521531100476,286.20095693779905 213.9904306220095,322.4019138755981 304,287 C 394.0095693779905,251.59808612440193 467.03349282296665,144.5933014354067 569,164 C 670.9665071770333,183.4066985645933 801.8755980861243,329.22488038277515 892,335 C 982.1244019138757,340.77511961722485 1031.4641148325359,206.5071770334928 1116,169 C 1200.5358851674641,131.4928229665072 1320.267942583732,190.7464114832536 1440,250 C 1440,250 1440,500 1440,500 Z");
-        }
-        100%{
-            d: path("M 0,500 C 0,500 0,250 0,250 C 115.37799043062202,267.45454545454544 230.75598086124404,284.9090909090909 340,257 C 449.24401913875596,229.0909090909091 552.3540669856459,155.81818181818187 622,163 C 691.6459330143541,170.18181818181813 727.8277511961722,257.8181818181818 824,277 C 920.1722488038278,296.1818181818182 1076.334928229665,246.9090909090909 1189,231 C 1301.665071770335,215.0909090909091 1370.8325358851675,232.54545454545456 1440,250 C 1440,250 1440,500 1440,500 Z");
-        }
-    }
-    </style>
+    <title>Portfolio</title>
 </head>
 <body>
     <header class="header">
@@ -39,11 +14,10 @@
         </div>
         <nav class="nav">
             <ul class="nav-list">
-                <li><a class="nav-item" id="nav-active" href="#"> HOME</a></li>
-                <li><a class="nav-item" href="#projects"> PROJECTS</a></li>
-                <li><a class="nav-item" href="#"> ABOUT</a></li>
-                <li><a class="nav-item" href="#"> RESUME</a></li>
-                <li><a class="nav-item" href="mailto:codingdre@gmail.com"> CONTACT</a></li>
+                <li><a class="nav-item" id="nav-active" href="#">HOME</a></li>
+                <li><a class="nav-item" href="#">ABOUT</a></li>
+                <li><a class="nav-item" href="#projects">PROJECTS</a></li>
+                <li><a class="nav-item" href="mailto:codingdre@gmail.com">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -56,20 +30,13 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, reprehenderit.</p>
         </div>
     </div>
-    <div class="main-header" id="projects">
-        <h1>My Learning Projects</h1><br>
-    </div>
     <main class="main">
-        <a href="https://itznemesis.github.io/odin-recipes/">
-        <div class="main-item">
-            <img src="./images/recipepage.png" alt="">
+        <div class="main-header">
+            <h1 class="projects-header">My Learning Projects</h1>
         </div>
-        </a>
-        <a href="https://itznemesis.github.io/Odin-Landing-Page-Demo/">
-        <div class="main-item">
-            <img src="./images/landingpage.png" alt="">
+        <div class="projects-container">
+            
         </div>
-        </a>
     </main>
 <footer>
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
