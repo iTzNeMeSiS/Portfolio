@@ -189,31 +189,79 @@ table {
 
 /* For Mobile */
 @media screen and (max-width: 540px) {
-    .footer-item {
-        margin: 20% 0;
+    .header {
+        flex-wrap: wrap;
     }
-    .main {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+    .about-me {
+        width: 330px;
     }
-    .main img {
-        width: 500px;
+    .typewrite {
+        width: 320px;
+        font-size: 19px;
     }
-        .nav ul {
+    .tech-text,
+    .projects-header {
+        font-size: 25px;
+    }
+    .react,
+    .projects-tech,
+    .projects-tech-2,
+    .photoshop,
+    .bootstrap,
+    .linux {
+        display: none;
+    }
+    .project-img {
+        width: 450px;
+    }
+    .projects-container {
+        gap: 40px;
+        padding-top: 80px;
+    }
+    .projects-container-2 {
+        gap: 40px;
+        padding-top: 40px;
+    }
+    #github {
+        width: 90px;
+    }
+    #linkedin {
+        height: 170px;
+    }
+    #email {
+        width: 70px;
+    }
+    .hero-img {
+        width: 300px;
+    }
+    .hero {
         justify-content: center;
+        height: 85vh;
+        padding-top: 10px;
     }
 }
 /* For Tablets */
 @media screen and (min-width: 540px) and (max-width: 780px) {
-    .main img {
-        width: 500px;
-      }
-     .nav ul {
-        justify-content: center;
-      }
-      .header {
-        flex-wrap: wrap;
-      }
+    .react,
+    .projects-tech,
+    .projects-tech-2,
+    .photoshop,
+    .bootstrap,
+    .linux {
+        display: none;
+    }
+    .projects-container {
+        gap: 40px;
+        padding-top: 80px;
+    }
+    .projects-container-2 {
+        gap: 40px;
+        padding-top: 40px;
+    }
+    .hero {
+        height: 90vh;
+        padding-top: 10px;
+    }
 }
 
 /* END RESPONSIVE*/
