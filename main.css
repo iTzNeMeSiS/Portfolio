@@ -115,6 +115,28 @@ body {
 table {
     padding-bottom: 100px;
 }
+.projects-tech {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.projects-tech-2 {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.projects-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
 
 /* END MAIN */
 
