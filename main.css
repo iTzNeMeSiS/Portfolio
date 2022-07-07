@@ -48,6 +48,12 @@ i:hover {
 i {
     color: #82bee1;
 }
+#hire-me {
+    color: black;
+}
+#hire-me:hover {
+    color: #82bee1;
+}
 .fa-solid, .fas {
     font-size: 23px;
 }
