@@ -48,8 +48,12 @@ i:hover {
 i {
     color: #82bee1;
 }
+.fa-solid, .fas {
+    font-size: 23px;
+}
 .projects-header {
     text-align: center;
+    padding-top: 30px;
 }
 .slide-right {
     animation: 3s slide-right;
@@ -114,6 +118,7 @@ body {
 }
 .about-me {
     width: 600px;
+    padding-top: 20px;
 }
 .typewrite {
     text-decoration: none;
@@ -289,6 +294,9 @@ table {
     }
     footer {
         height: 300px;
+    }
+    .about-me {
+        width: 400px;
     }
 }
 /* For Tablets */
